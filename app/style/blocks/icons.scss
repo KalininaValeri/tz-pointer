@@ -1,5 +1,21 @@
-.about__icon {
+body {
   font-size: 10px;
+}
+
+.about {
+  position: relative;
+  height: 318px;
+  width: 963px;
+  margin: auto;
+}
+
+.about__icon {
+  position: absolute;
+}
+
+.about__icon_effect {
+  top: 0;
+  left: 0;
 }
 
 .about__icon:before {
@@ -8,113 +24,177 @@
   display: inline-block;
   background-image: url("../img/svg/sprite.svg");
   background-repeat: no-repeat;
-  background-size: 55.5em 108.2em;
 }
 
 .about__icon_effect:before {
   background: url("../img/__svg/effect.svg") no-repeat;
-  width: 55.5em;
-  height: 10.5em;
+  width: 549px;
+  height: 101px;
+}
+
+.about__icon_creative {
+  top: 26px;
+  left: 550px;
 }
 
 .about__icon_creative:before {
   background: url("../img/__svg/creative.svg") no-repeat;
-  width: 41.35em;
-  height: 8.65em;
+  width: 415px;
+  height: 84px;
+}
+
+.about__icon_iweb {
+  top: 103px;
+  left: 0;
 }
 
 .about__icon_iweb:before {
   background: url("../img/__svg/iweb.svg") no-repeat;
-  width: 32em;
-  height: 9.5em;
+  width: 320px;
+  height: 95px;
 }
 
-
-
-
-
-.no-svg .icon:before {
-  background-image: url("../img/svg/sprite.png");
+.about__icon_technology {
+  top: 103px;
+  left: 314px;
 }
 
-.icon.bussines:before {
-  background-position: 0em 0em;
-  width: 33.5em;
-  height: 12.5em;
+.about__icon_technology:before {
+  background: url("../img/__svg/technology.svg") no-repeat;
+  width: 455px;
+  height: 85px;
 }
 
-.icon.creative:before {
-  background-position: 0em -12.5em;
-  width: 41.35em;
-  height: 8.65em;
+.about__icon_dlya {
+  top: 198px;
+  left: 0;
 }
 
-.icon.dlya:before {
-  background-position: 0em -21.2em;
-  width: 19em;
-  height: 9.5em;
+.about__icon_dlya:before {
+  background: url("../img/__svg/dlya.svg") no-repeat;
+  width: 190px;
+  height: 95px;
 }
 
-.icon.effect:before {
-  background-image: url("../img/effect.svg");
-  //background-position: 0em -30.7em;
-  width: 55.5em;
-  height: 10.5em;
+.about__icon_resheniya {
+  top: 209px;
+  left: 204px;
 }
 
-
-
-
-.icon.folio:before {
-  background-position: 0em -41.2em;
-  width: 36.5em;
-  height: 11.5em;
+.about__icon_resheniya:before {
+  background: url("../img/__svg/resheniya.svg") no-repeat;
+  width: 210px;
+  height: 90px;
 }
 
-
-
-
-.icon.iweb:before {
-  background-position: 0em -52.7em;
-  width: 32em;
-  height: 9.5em;
+.about__icon_bussines {
+  top: 191px;
+  left: 431px;
 }
 
-
-
-
-.icon.re-logo:before {
-  background-position: 0em -62.2em;
-  width: 22.5em;
-  height: 10em;
+.about__icon_bussines:before {
+  background: url("../img/__svg/bussines.svg") no-repeat;
+  width: 335px;
+  height: 125px;
 }
 
-
-
-
-.icon.resheniya:before {
-  background-position: 0em -72.2em;
-  width: 21em;
-  height: 9em;
+.about__icon_zadach {
+  top: 114px;
+  left: 763px;
 }
 
-
-
-
-.icon.technology:before {
-  background-position: 0em -81.2em;
-  width: 45.5em;
-  height: 8.5em;
-}
-
-
-
-
-.icon.zadach:before {
-  background-position: 0em -89.7em;
+.about__icon_zadach:before {
+  background: url("../img/__svg/zadach.svg") no-repeat;
   width: 19.5em;
-  height: 18.5em;
+  height: 18.5em
 }
+//
+//
+//
+//
+//
+//.no-svg .icon:before {
+//  background-image: url("../img/svg/sprite.png");
+//}
+//
+//.icon.bussines:before {
+//  background-position: 0em 0em;
+//  width: 33.5em;
+//  height: 12.5em;
+//}
+//
+//.icon.creative:before {
+//  background-position: 0em -12.5em;
+//  width: 41.35em;
+//  height: 8.65em;
+//}
+//
+//.icon.dlya:before {
+//  background-position: 0em -21.2em;
+//  width: 19em;
+//  height: 9.5em;
+//}
+//
+//.icon.effect:before {
+//  background-image: url("../img/effect.svg");
+//  //background-position: 0em -30.7em;
+//  width: 55.5em;
+//  height: 10.5em;
+//}
+//
+//
+//
+//
+//.icon.folio:before {
+//  background-position: 0em -41.2em;
+//  width: 36.5em;
+//  height: 11.5em;
+//}
+//
+//
+//
+//
+//.icon.iweb:before {
+//  background-position: 0em -52.7em;
+//  width: 32em;
+//  height: 9.5em;
+//}
+//
+//
+//
+//
+//.icon.re-logo:before {
+//  background-position: 0em -62.2em;
+//  width: 22.5em;
+//  height: 10em;
+//}
+//
+//
+//
+//
+//.icon.resheniya:before {
+//  background-position: 0em -72.2em;
+//  width: 21em;
+//  height: 9em;
+//}
+//
+//
+//
+//
+//.icon.technology:before {
+//  background-position: 0em -81.2em;
+//  width: 45.5em;
+//  height: 8.5em;
+//}
+//
+//
+//
+//
+//.icon.zadach:before {
+//  background-position: 0em -89.7em;
+//  width: 19.5em;
+//  height: 18.5em;
+//}
 
 
 

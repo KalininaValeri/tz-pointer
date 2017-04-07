@@ -1,0 +1,122 @@
+.about__icon {
+  font-size: 10px;
+}
+
+.about__icon:before {
+  content:' ';
+  vertical-align:middle;
+  display: inline-block;
+  background-image: url("../img/svg/sprite.svg");
+  background-repeat: no-repeat;
+  background-size: 55.5em 108.2em;
+}
+
+.about__icon_effect:before {
+  background: url("../img/__svg/effect.svg") no-repeat;
+  width: 55.5em;
+  height: 10.5em;
+}
+
+.about__icon_creative:before {
+  background: url("../img/__svg/creative.svg") no-repeat;
+  width: 41.35em;
+  height: 8.65em;
+}
+
+.about__icon_iweb:before {
+  background: url("../img/__svg/iweb.svg") no-repeat;
+  width: 32em;
+  height: 9.5em;
+}
+
+
+
+
+
+.no-svg .icon:before {
+  background-image: url("../img/svg/sprite.png");
+}
+
+.icon.bussines:before {
+  background-position: 0em 0em;
+  width: 33.5em;
+  height: 12.5em;
+}
+
+.icon.creative:before {
+  background-position: 0em -12.5em;
+  width: 41.35em;
+  height: 8.65em;
+}
+
+.icon.dlya:before {
+  background-position: 0em -21.2em;
+  width: 19em;
+  height: 9.5em;
+}
+
+.icon.effect:before {
+  background-image: url("../img/effect.svg");
+  //background-position: 0em -30.7em;
+  width: 55.5em;
+  height: 10.5em;
+}
+
+
+
+
+.icon.folio:before {
+  background-position: 0em -41.2em;
+  width: 36.5em;
+  height: 11.5em;
+}
+
+
+
+
+.icon.iweb:before {
+  background-position: 0em -52.7em;
+  width: 32em;
+  height: 9.5em;
+}
+
+
+
+
+.icon.re-logo:before {
+  background-position: 0em -62.2em;
+  width: 22.5em;
+  height: 10em;
+}
+
+
+
+
+.icon.resheniya:before {
+  background-position: 0em -72.2em;
+  width: 21em;
+  height: 9em;
+}
+
+
+
+
+.icon.technology:before {
+  background-position: 0em -81.2em;
+  width: 45.5em;
+  height: 8.5em;
+}
+
+
+
+
+.icon.zadach:before {
+  background-position: 0em -89.7em;
+  width: 19.5em;
+  height: 18.5em;
+}
+
+
+
+
+

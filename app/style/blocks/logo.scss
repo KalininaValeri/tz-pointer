@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  opacity: 1;
+  transition: all 2s;
+  -mos-transition: all 2s;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  -ms-transition: all 2s;
+
+  background: url("../img/__svg/re-logo.svg") no-repeat;
+  width: 22.5em;
+  height: 10em;
+  margin-right: 40px;
+}
+
+.logo.invisible {
+  opacity: 0;
+  transition: all 2s;
+  -mos-transition: all 2s;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  -ms-transition: all 2s;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact__point {
+  border-radius: 50%;
+  margin-right: 15px;
+  opacity: 1;
+  transition: all 2s;
+  -mos-transition: all 2s;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  -ms-transition: all 2s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact__point.invisible {
+  opacity: 0;
+}
+
+.contact__point_one {
+  background-color: rgba($orange, 0.6);
+  width: 6px;
+  height: 6px;
+}
+
+.contact__point_two {
+  background-color: rgba($orange, 0.8);
+  width: 8px;
+  height: 8px;
+}
+
+.contact__point_three {
+  background-color: $orange;
+  width: 10px;
+  height: 10px;
+}
+
+.contact__link {
+  border-radius: 8px;
+  background-color:  #e08424;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 15px 25px;
+}

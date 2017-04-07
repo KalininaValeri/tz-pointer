@@ -1,0 +1,14 @@
+.link-portfolio {
+  display: block;
+  background: url("../img/__svg/folio.svg") no-repeat;
+  width: 36.5em;
+  height: 11.5em;
+  position: absolute;
+  left: 50%;
+  margin-left: -18.3em;
+  bottom: 20px;
+}
+
+.link-portfolio.invisible {
+  display: none;
+}

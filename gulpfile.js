@@ -28,6 +28,15 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('dist/style'));
 });
 
+// gulp.task('css', function () {
+//     return gulp.src('./dist/style')
+//         .pipe(autoprefixer({
+//             browsers: ['last 2 versions'],
+//             cascade: false
+//         }))
+//         .pipe(gulp.dest('dist/style'));
+// });
+
 gulp.task('scripts', function() {
     return gulp.src(['./app/js/blocks/*.js', './app/js/main.js'])
         .pipe(concat('all.js'))

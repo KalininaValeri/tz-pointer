@@ -1,12 +1,21 @@
 body {
   font-size: 10px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
 }
 
 .about {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -159px;
+  margin-left: -481px;
   height: 318px;
   width: 963px;
-  margin: auto;
+  overflow: hidden;
 }
 
 .about__icon {
@@ -24,6 +33,7 @@ body {
   display: inline-block;
   background-image: url("../img/svg/sprite.svg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .about__icon_effect:before {
@@ -34,8 +44,18 @@ body {
 
 .about__icon_creative {
   top: 26px;
+  left: 958px;
+  -webkit-transition: left 1s;
+  -moz-transition: left 1s;
+  -o-transition: left 1s;
+  transition: left 1s;
+}
+
+.about__icon_creative.visible {
   left: 550px;
 }
+
+
 
 .about__icon_creative:before {
   background: url("../img/__svg/creative.svg") no-repeat;
@@ -46,6 +66,36 @@ body {
 .about__icon_iweb {
   top: 103px;
   left: 0;
+  opacity: 0;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -moz-transform-origin: 0 2.1em;
+  -ms-transform-origin: 0 2.1em;
+  -webkit-transform-origin: 0 2.1em;
+  -o-transform-origin: 0 2.1em;
+  transform-origin: 0 2.1em;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+
+}
+
+.about__icon_iweb.visible {
+  opacity: 1;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transform-origin: 0 2.1em;
+  -ms-transform-origin: 0 2.1em;
+  -webkit-transform-origin: 0 2.1em;
+  -o-transform-origin: 0 2.1em;
+  transform-origin: 0 2.1em;
 }
 
 .about__icon_iweb:before {
@@ -55,8 +105,15 @@ body {
 }
 
 .about__icon_technology {
-  top: 103px;
   left: 314px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.about__icon_technology.visible {
+  top: 103px!important;
 }
 
 .about__icon_technology:before {
@@ -79,6 +136,39 @@ body {
 .about__icon_resheniya {
   top: 209px;
   left: 204px;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -moz-transform-origin: 0 180px;
+  -ms-transform-origin: 0 180px;
+  -webkit-transform-origin: 0 180px;
+  -o-transform-origin: 0 180px;
+  transform-origin: 0 180px;
+  opacity: 0.2;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.about__icon_resheniya.visible {
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transform-origin: 0 0px;
+  -ms-transform-origin: 0 0px;
+  -webkit-transform-origin: 0 0px;
+  -o-transform-origin: 0 0px;
+  transform-origin: 0 0px;
+  opacity: 1;
+}
+
+.about:hover .about__icon_resheniya {
+
 }
 
 .about__icon_resheniya:before {
@@ -99,15 +189,62 @@ body {
 }
 
 .about__icon_zadach {
-  top: 114px;
-  left: 763px;
+  width: 2.5em;
+  height: 2.5em;
+  top: 176px;
+  -moz-transition: left 5s;
+  -ms-transition: left 5s;
+  -webkit-transition: left 5s;
+  -o-transition: left 5s;
+  transition: left 5s;
+
+  &:before {
+    background: url("../img/__svg/zadach.svg") no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
 }
 
-.about__icon_zadach:before {
-  background: url("../img/__svg/zadach.svg") no-repeat;
-  width: 19.5em;
-  height: 18.5em
+@keyframes appear {
+  0% {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  100%{
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    width: 19.5em;
+    height: 18.5em;
+    top: 114px;
+  }
 }
+
+.about__icon_zadach.visible {
+  left: 763px!important;
+  top: 114px;
+  animation-duration: 5s;
+  animation-name: appear;
+  animation-delay: 5s;
+
+
+
+}
+
+//.about__icon_zadach:before {
+//
+//}
+//
+//.about__icon_zadach:hover {
+//  left: 763px!important;
+//  transform: translateX(50px);
+//}
+
+
 //
 //
 //

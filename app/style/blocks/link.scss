@@ -1,12 +1,19 @@
 .link-portfolio {
   display: block;
   background: url("../img/__svg/folio.svg") no-repeat;
-  width: 36.5em;
-  height: 11.5em;
+  background-size: contain;
+  width: 36.5rem;
+  height: 11.5rem;
   position: absolute;
   left: 50%;
-  margin-left: -18.3em;
-  bottom: 20px;
+  margin-left: -18.3rem;
+  bottom: 2rem;
+
+  @include tablet{
+    width: 73rem;
+    height: 23rem;
+    margin-left: -36.5rem;
+  }
 }
 
 .link-portfolio.invisible {

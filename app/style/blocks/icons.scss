@@ -1,5 +1,3 @@
-
-
 .container {
   position: relative;
 }
@@ -8,10 +6,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -159px;
-  margin-left: -481px;
-  height: 318px;
-  width: 963px;
+  margin-top: -15.9rem;
+  margin-left: -48rem;
+  height: 31.8rem;
+  width: 96.3rem;
   overflow: hidden;
 }
 
@@ -35,13 +33,14 @@
 
 .about__icon_effect:before {
   background: url("../img/__svg/effect.svg") no-repeat;
-  width: 549px;
-  height: 101px;
+  width: 54.9rem;
+  height: 10.1rem;
+  background-size: contain;
 }
 
 .about__icon_creative {
-  top: 26px;
-  left: 958px;
+  top: 2.6rem;
+  left: 95.8rem;
   -webkit-transition: left 1s;
   -moz-transition: left 1s;
   -o-transition: left 1s;
@@ -49,19 +48,20 @@
 }
 
 .about__icon_creative.visible {
-  left: 550px;
+  left: 55rem;
 }
 
 
 
 .about__icon_creative:before {
   background: url("../img/__svg/creative.svg") no-repeat;
-  width: 415px;
-  height: 84px;
+  background-size: contain;
+  width: 41.5rem;
+  height: 8.4rem;
 }
 
 .about__icon_iweb {
-  top: 103px;
+  top: 10.3rem;
   left: 0;
   opacity: 0;
   -moz-transform: rotate(90deg);
@@ -69,11 +69,11 @@
   -webkit-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
-  -moz-transform-origin: 0 2.1em;
-  -ms-transform-origin: 0 2.1em;
-  -webkit-transform-origin: 0 2.1em;
-  -o-transform-origin: 0 2.1em;
-  transform-origin: 0 2.1em;
+  -moz-transform-origin: 0 2.1rem;
+  -ms-transform-origin: 0 2.1rem;
+  -webkit-transform-origin: 0 2.1rem;
+  -o-transform-origin: 0 2.1rem;
+  transform-origin: 0 2.1rem;
   -webkit-transition: all 1.5s;
   -moz-transition: all 1.5s;
   -o-transition: all 1.5s;
@@ -88,21 +88,22 @@
   -webkit-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -moz-transform-origin: 0 2.1em;
-  -ms-transform-origin: 0 2.1em;
-  -webkit-transform-origin: 0 2.1em;
-  -o-transform-origin: 0 2.1em;
-  transform-origin: 0 2.1em;
+  -moz-transform-origin: 0 2.1rem;
+  -ms-transform-origin: 0 2.1rem;
+  -webkit-transform-origin: 0 2.1rem;
+  -o-transform-origin: 0 2.1rem;
+  transform-origin: 0 2.1rem;
 }
 
 .about__icon_iweb:before {
   background: url("../img/__svg/iweb.svg") no-repeat;
-  width: 320px;
-  height: 95px;
+  background-size: contain;
+  width: 32rem;
+  height: 9.5rem;
 }
 
 .about__icon_technology {
-  left: 314px;
+  left: 31.4rem;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -110,39 +111,41 @@
 }
 
 .about__icon_technology.visible {
-  top: 103px!important;
+  top: 10.3rem!important;
 }
 
 .about__icon_technology:before {
   background: url("../img/__svg/technology.svg") no-repeat;
-  width: 455px;
-  height: 85px;
+  background-size: contain;
+  width: 45.5rem;
+  height: 8.5rem;
 }
 
 .about__icon_dlya {
-  top: 198px;
+  top: 19.8rem;
   left: 0;
 }
 
 .about__icon_dlya:before {
   background: url("../img/__svg/dlya.svg") no-repeat;
-  width: 190px;
-  height: 95px;
+  background-size: contain;
+  width: 19rem;
+  height: 9.5rem;
 }
 
 .about__icon_resheniya {
-  top: 209px;
-  left: 204px;
+  top: 20.9rem;
+  left: 20.4rem;
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
-  -moz-transform-origin: 0 180px;
-  -ms-transform-origin: 0 180px;
-  -webkit-transform-origin: 0 180px;
-  -o-transform-origin: 0 180px;
-  transform-origin: 0 180px;
+  -moz-transform-origin: 0 18rem;
+  -ms-transform-origin: 0 18rem;
+  -webkit-transform-origin: 0 18rem;
+  -o-transform-origin: 0 18rem;
+  transform-origin: 0 18rem;
   opacity: 0.2;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -156,11 +159,11 @@
   -webkit-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -moz-transform-origin: 0 0px;
-  -ms-transform-origin: 0 0px;
-  -webkit-transform-origin: 0 0px;
-  -o-transform-origin: 0 0px;
-  transform-origin: 0 0px;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
   opacity: 1;
 }
 
@@ -170,25 +173,27 @@
 
 .about__icon_resheniya:before {
   background: url("../img/__svg/resheniya.svg") no-repeat;
-  width: 210px;
-  height: 90px;
+  background-size: contain;
+  width: 21rem;
+  height: 9rem;
 }
 
 .about__icon_bussines {
-  top: 191px;
-  left: 431px;
+  top: 19.1rem;
+  left: 43.1rem;
 }
 
 .about__icon_bussines:before {
   background: url("../img/__svg/bussines.svg") no-repeat;
-  width: 335px;
-  height: 125px;
+  background-size: contain;
+  width: 33.5rem;
+  height: 12.5rem;
 }
 
 .about__icon_zadach {
-  width: 2.5em;
-  height: 2.5em;
-  top: 176px;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 17.6rem;
   -moz-transition: left 5s;
   -ms-transition: left 5s;
   -webkit-transition: left 5s;
@@ -197,6 +202,7 @@
 
   &:before {
     background: url("../img/__svg/zadach.svg") no-repeat;
+    background-size: contain;
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -205,8 +211,8 @@
 
 @keyframes appear {
   0% {
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   100%{
@@ -215,15 +221,15 @@
     -webkit-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
-    width: 19.5em;
-    height: 18.5em;
-    top: 114px;
+    width: 19.5rem;
+    height: 18.5rem;
+    top: 11.4rem;
   }
 }
 
 .about__icon_zadach.visible {
-  left: 763px!important;
-  top: 114px;
+  left: 76.3rem!important;
+  top: 11.4rem;
   animation-duration: 5s;
   animation-name: appear;
   animation-delay: 5s;

@@ -1,4 +1,6 @@
 $(function () {
+    //animasthoin slide 1
+
     var
         containerAbout = document.querySelector('.about'),
         time = 0;
@@ -68,34 +70,30 @@ $(function () {
         document.querySelector('.logo').classList.remove('invisible');
     }, 1000 * 3.5 + 3000 + 3000 + 5000);
 
-    // setInterval(function () {
-    //     document.querySelector('.logo').classList.remove('invisible');
-    // }, 1000 * 3.5 + 3000 + 3000 + 5000);
+    setInterval(function(){
+        arrPoint = document.querySelectorAll('.contact__point');
 
-    arrPoint = document.querySelectorAll('.contact__point');
-    var
-        timeNode = 0,
-        counter = 0;
+        var
+            timeNode = 0,
+            counter = 0,
+            timer;
 
-    var addPoint = function () {
+        function each() {
+            arrPoint[counter].classList.remove('invisible');
 
-
-        // setInterval(function () {
-        //     console.log(arrPoint[counter]);
-        // }, timeNode);
-
-        console.log(arrPoint[counter]);
-
-        if (counter < 3) {
             counter = counter + 1;
-            timeNode = timeNode + 500;
-            addPoint();
-        } else {
-            return false;
-        }
-    };
+            timer = setTimeout(each, 500);
 
-    addPoint();
+            if (counter == arrPoint.length) {
+                clearTimeout(timer);
+            }
+        }
+
+        each();
+    }, 1000 * 3.5 + 3000 + 3000 + 6000)
+
+
+
 
 
 });

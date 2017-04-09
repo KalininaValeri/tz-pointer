@@ -1,0 +1,19 @@
+$fontTypes : (ExtraLight, Light, Regular);
+
+@each $fontType in $fontTypes {
+  @font-face {
+    font-family: "RopaSoftPro";
+    src: url("../fonts/lettersoup - RopaSoftPro-#{$fontType}.otf");
+
+    @if $fontType == Regular {
+      font-weight: normal;
+      font-style: normal;
+    }@else if $fontType == ExtraLight {
+      font-weight: 100;
+      font-style: normal;
+    } @else if $fontType == Light {
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+}

@@ -18,7 +18,8 @@ html
         script(src='./js/all.js')
 
     body
-        .container
+
+        .container.show-slider
             header.header
                 .logo
                 .contact
@@ -27,9 +28,25 @@ html
                     .contact__point.contact__point_three
                     a.contact__point.contact__link(href="#") Связаться с нами
 
-            .about
+            section.about
                 .about__icon.about__icon_zadach
-            a.link-portfolio.invisible(href='#' target="_blank")
+                a.link-portfolio.invisible(href='#' target="_blank")
+
+            section.slider
+                .slide.slide-one
+                    form.form-slide
+                        h2.form-slide__title Оставте Ваш номер телефона и мы перезвоним
+                        input.form-slide__input(type='text' value='Имя')
+                        input.form-slide__input(type='text' value='Телефон')
+                        button.form-slide__btn Оставить
+
+                .slide.slide-two
+                ul.slider-paginator
+                    li.slider-paginator__item.slider-paginator__item_dots
+                    li.slider-paginator__item.slider-paginator__item_dots
+                    li.slider-paginator__item.slider-paginator__item_close
+
+
 
 
 

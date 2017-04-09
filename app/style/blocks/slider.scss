@@ -1,0 +1,55 @@
+.container {
+  .slider {
+    display: none;
+  }
+}
+
+.container.show-slider {
+  .slider {
+    display: block;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .contact {
+    opacity: 0;
+  }
+}
+
+.slider-paginator {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.slider-paginator__item {
+  margin-right: 1.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.slider-paginator__item_dots {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background: $orange;
+}
+
+.slider-paginator__item_close {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #000;
+}
+
+.form-slide__title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 2rem;
+}

@@ -24,6 +24,7 @@ body {
   font-size: 10px;
   overflow: hidden;
   margin: 0;
+  font-family: 'RopaSoftPro';
 }
 
 a {
@@ -36,7 +37,20 @@ ul {
   list-style: none;
 }
 
+.container {
+  position: relative;
+
+
+  .slider {
+    display: none;
+  }
+}
+
+
+
+
 
 @import "blocks/icons";
 @import "blocks/link";
 @import "blocks/header";
+@import "blocks/slider";

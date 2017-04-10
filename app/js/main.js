@@ -11,6 +11,7 @@ $(function () {
 
     document.querySelector('.container').style.height = window.innerHeight + 'px';
 
+
     // effectsAbout();
     // effectsHeader();
 
@@ -23,7 +24,7 @@ $(function () {
 
     btnPaginator.addEventListener('click', function (e) {
         transitionSectionSlider(e);
-    })
+    });
 
     form.addEventListener('keydown', function () {
 

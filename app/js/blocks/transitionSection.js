@@ -30,6 +30,7 @@ var transitionSectionAbout = function(event){
     setTimeout(function(){
         slider.classList.remove('bottom');
         slider.classList.add('jump');
+        // document.querySelector('.form-slide__input_phone').value = '';
 
         about.classList.remove('jump');
         btnPortfolio.classList.remove('jump');

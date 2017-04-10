@@ -33,14 +33,19 @@ html
                 a.link-portfolio.invisible(href='#' target="_blank")
 
             section.slider
-                .slide.slide-one
-                    form.form-slide
-                        h2.form-slide__title Оставте Ваш номер телефона и мы перезвоним
-                        input.form-slide__input(type='text' placeholder="Имя")
-                        input.form-slide__input(type='text' placeholder='Телефон')
-                        button.form-slide__btn Оставить
+                .slide.active.slide-one
+                    .slide-one__container
+                        form.form-slide
+                            h2.slide__title Оставте Ваш номер телефона и мы перезвоним
+                            input.form-slide__input(type='text' placeholder="Имя")
+                            input.form-slide__input(type='text' placeholder='Телефон')
+                            button.form-slide__btn Оставить
 
-                .slide.slide-two
+                .slide.slide-two.next
+                    .slide-two__container
+                        h2.slide__title Здравсвуйте. Спасибо за обращение!
+                        p.slide__content Наша команда предлагает персонализированные решения бизнес-задач клиента посредством эффективного креатива. WEB-технологий и аналитики
+                        p.slide__content Мы обязательно обсудим Ваш запрос в команде и свяжемся с Вами в самое близжайшее время.
                 ul.slider-paginator
                     li.slider-paginator__item.slider-paginator__item_dots
                     li.slider-paginator__item.slider-paginator__item_dots

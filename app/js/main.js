@@ -92,6 +92,25 @@ $(function () {
         each();
     }, 1000 * 3.5 + 3000 + 3000 + 6000)
 
+    document.querySelector('.slider').addEventListener('click', function () {
+
+
+        document.querySelector('.slide.active').classList.add('prev');
+        document.querySelector('.slide.active').classList.remove('active');
+
+        document.querySelector('.slide.next').classList.add('active');
+        document.querySelector('.slide.next').classList.remove('next');
+
+        setTimeout(function () {
+            document.querySelector('.slide.prev').classList.add('next');
+            document.querySelector('.slide.prev').classList.remove('prev');
+        }, 1000);
+
+
+
+        console.log('123');
+    });
+
 
 
 

@@ -6,7 +6,24 @@
   margin-left: -48rem;
   height: 31.8rem;
   width: 96.3rem;
-  overflow: hidden;
+  //overflow: hidden;
+  -webkit-transition: top 100ms;
+  -moz-transition: top 100ms;
+  -o-transition: top 100ms;
+  transition: top 100ms;
+}
+
+.about.jump {
+  top: 40%;
+}
+
+.about.bottom {
+  top: 150%;
+  transition: all 500ms;
+  -wepkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
 }
 
 .about__icon {
@@ -161,10 +178,6 @@
   -o-transform-origin: 0 0;
   transform-origin: 0 0;
   opacity: 1;
-}
-
-.about:hover .about__icon_resheniya {
-
 }
 
 .about__icon_resheniya:before {

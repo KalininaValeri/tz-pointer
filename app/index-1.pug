@@ -23,7 +23,7 @@ html
 
     body
 
-        .container.show-slider
+        .container
             header.header
                 .logo
                 .contact
@@ -34,7 +34,18 @@ html
 
             section.about
                 .about__icon.about__icon_zadach
-                a.link-portfolio.invisible(href='#' target="_blank")
+
+                a.link-portfolio(href='#' target="_blank")
+
+                .about__icon.about__icon_effect
+                .about__icon.about__icon_creative.visible
+                .about__icon.about__icon_iweb.visible
+                .about__icon.about__icon_dlya
+                .about__icon.about__icon_resheniya.visible
+                .about__icon.about__icon_bussines
+                .about__icon.about__icon_technology.visible
+
+
 
             section.slider
                 .slide.active.slide-one

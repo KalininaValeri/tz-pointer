@@ -28,36 +28,44 @@ var addClassVisible = function (className, timeAdd) {
 
 var effectsAbout = function () {
     var
-        containerAbout = document.querySelector('.about');
+        containerAbout = document.querySelector('.about'),
+        nodeSolushion = document.querySelector('.about__icon_zadach'),
+    aboutTechnology = document.querySelector('.about__icon_technology'),
+        topAboutTechnology = containerAbout.getBoundingClientRect().top + aboutTechnology.offsetHeight;
+
+    aboutTechnology.style.top = '-' + topAboutTechnology + 'px';
 
 
     buldSodeSolushion(); //zadach
 
-    addNewIcon('about__icon_effect', 0); //effect
+    // addNewIcon('about__icon_effect', 0); //effect
 
     addNewIcon('about__icon_creative', 1000 * 3.5); //creative
     addClassVisible('.about__icon_creative', 1000 * 3 + 510);
 
 
-    addNewIcon('about__icon_iweb', 1000 * 3 + 800);
     addClassVisible('.about__icon_iweb', 1000 * 3 + 810);
 
-    addNewIcon('about__icon_technology', 1000 * 4 + 200);
+    // addNewIcon('about__icon_technology', 1000 * 4 + 200);
     setTimeout(function () {
-        var
-            aboutTechnology = document.querySelector('.about__icon_technology'),
-            topAboutTechnology = containerAbout.getBoundingClientRect().top + aboutTechnology.offsetHeight;
-
         containerAbout.style.overflow = 'visible';
-        aboutTechnology.style.top = '-' + topAboutTechnology + 'px';
+
     }, 1000 * 4 + 810);
     addClassVisible('.about__icon_technology', 1000 * 4 + 330);
 
-    addNewIcon('about__icon_dlya', 1000 * 3 + 820);
+    addNewIcon('about__icon_dlya', 1000 * 3 + 520);
 
-    addClassVisible('.about__icon_zadach', 1000 * 5 + 500);
+    setTimeout(function () {
+        nodeSolushion.classList.add('left');
+    }, 1000 * 5);
 
-    addNewIcon('about__icon_resheniya', 1000 * 3 + 820);
+    setTimeout(function () {
+        nodeSolushion.classList.add('visible');
+        nodeSolushion.classList.remove('left');
+    }, 1000 * 6)
+
+    // addClassVisible('.about__icon_zadach', 1000 * 5);
+
     addClassVisible('.about__icon_resheniya', 1000 * 4 + 530);
 
     addNewIcon('about__icon_bussines', 1000 * 4);

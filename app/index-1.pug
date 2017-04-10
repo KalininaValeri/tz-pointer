@@ -25,27 +25,23 @@ html
 
         .container
             header.header
-                .logo
+                .logo.invisible
                 .contact
-                    .contact__point.contact__point_one
-                    .contact__point.contact__point_two
-                    .contact__point.contact__point_three
-                    a.contact__point.contact__link(href="#") Связаться с нами
+                    .contact__point.contact__point_one.invisible
+                    .contact__point.contact__point_two.invisible
+                    .contact__point.contact__point_three.invisible
+                    a.contact__point.contact__link.invisible(href="#") Связаться с нами
 
             section.about
+                a.invisible.link-portfolio(href='#' target="_blank")
                 .about__icon.about__icon_zadach
-
-                a.link-portfolio(href='#' target="_blank")
-
                 .about__icon.about__icon_effect
-                .about__icon.about__icon_creative.visible
-                .about__icon.about__icon_iweb.visible
-                .about__icon.about__icon_dlya
-                .about__icon.about__icon_resheniya.visible
-                .about__icon.about__icon_bussines
-                .about__icon.about__icon_technology.visible
-
-
+                .about__icon.about__icon_iweb
+                .about__icon.about__icon_resheniya
+                .about__icon.about__icon_technology
+                //.about__icon.about__icon_creative
+                //.about__icon.about__icon_dlya
+                //.about__icon.about__icon_bussines
 
             section.slider.bottom
                 .slide.active.slide-one

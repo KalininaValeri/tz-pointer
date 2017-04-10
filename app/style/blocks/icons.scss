@@ -6,7 +6,7 @@
   margin-left: -48rem;
   height: 31.8rem;
   width: 96.3rem;
-  //overflow: hidden;
+  overflow: hidden;
   -webkit-transition: top 100ms;
   -moz-transition: top 100ms;
   -o-transition: top 100ms;
@@ -200,14 +200,14 @@
 }
 
 .about__icon_zadach {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   top: 17.6rem;
-  -moz-transition: left 5s;
-  -ms-transition: left 5s;
-  -webkit-transition: left 5s;
-  -o-transition: left 5s;
-  transition: left 5s;
+  -moz-transition: left 2s;
+  -ms-transition: left 2s;
+  -webkit-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
 
   &:before {
     background: url("../img/__svg/zadach.svg") no-repeat;
@@ -217,6 +217,11 @@
     background-size: contain;
   }
 }
+
+.about__icon_zadach.left {
+  left: 76.3rem!important;
+}
+
 
 @keyframes appear {
   0% {
@@ -239,9 +244,11 @@
 .about__icon_zadach.visible {
   left: 76.3rem!important;
   top: 11.4rem;
-  animation-duration: 5s;
+  width: 19.5rem;
+  height: 18.5rem;
+  animation-duration: 300ms;
   animation-name: appear;
-  animation-delay: 5s;
+  //animation-delay: 2s;
 
 
 

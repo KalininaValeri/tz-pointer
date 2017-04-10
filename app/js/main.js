@@ -2,7 +2,8 @@ $(function () {
     var
         form = document.querySelector('.form-slide'),
         btnContacts = document.querySelector('.contact__link'),
-        btnPaginator = document.querySelector('.slider-paginator__link');
+        btnPaginator = document.querySelector('.slider-paginator__link'),
+        btnPortfolio = document.querySelector('.link-portfolio');
         inputPhone = document.querySelector('.form-slide__input_phone'),
         btnSubmitForm = document.querySelector('.form-slide__btn'),
         arrPaginatorDots = [];
@@ -12,13 +13,17 @@ $(function () {
     document.querySelector('.container').style.height = window.innerHeight + 'px';
 
 
-    // effectsAbout();
-    // effectsHeader();
+    effectsAbout();
+    effectsHeader();
 
     inputPhone.addEventListener('keydown', validNumber);
     inputPhone.addEventListener('focus', validFocus());
 
     btnContacts.addEventListener('click', function(e){
+        transitionSectionAbout(e);
+    });
+
+    btnPortfolio.addEventListener('click', function(e){
         transitionSectionAbout(e);
     });
 

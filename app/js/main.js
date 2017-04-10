@@ -6,7 +6,10 @@ $(function () {
         time = 0,
         inputName = document.querySelector('.form-slide__input_name'),
         inputPhone = document.querySelector('.form-slide__input_phone'),
-        btnSubmitForm = document.querySelector('.form-slide__btn');
+        btnSubmitForm = document.querySelector('.form-slide__btn'),
+        arrPaginatorDots = [];
+
+    arrPaginatorDots = document.querySelectorAll('.slider-paginator__item_dots');
 
     var buldSodeSolushion = function () {
         var
@@ -157,6 +160,8 @@ $(function () {
     };
 
 
+
+
     document.querySelector('.form-slide.disable').addEventListener('keydown', function () {
 
         var
@@ -164,6 +169,7 @@ $(function () {
 
         if (inputValid === 2) {
             btnSubmitForm.classList.remove('disable');
+            arrPaginatorDots[1].classList.add('full');
         }
 
         if (inputValid !== 2) {
@@ -186,6 +192,10 @@ $(function () {
         document.querySelector('.slide.next').classList.add('active');
         document.querySelector('.slide.next').classList.remove('next');
 
+        arrPaginatorDots[0].classList.remove('active');
+        arrPaginatorDots[1].classList.remove('full');
+        arrPaginatorDots[1].classList.add('active');
+
         setTimeout(function () {
             document.querySelector('.slide.prev').classList.add('next');
             document.querySelector('.slide.prev').classList.remove('prev');
@@ -193,6 +203,7 @@ $(function () {
 
         console.log('submit');
     });
+
 
 
 });

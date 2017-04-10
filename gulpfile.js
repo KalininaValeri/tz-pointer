@@ -38,7 +38,7 @@ gulp.task('sass', function () {
 // });
 
 gulp.task('scripts', function() {
-    return gulp.src(['./app/js/blocks/*.js', './app/js/main.js'])
+    return gulp.src(['./app/js/vendor/*.js', './app/js/blocks/*.js', './app/js/main.js'])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('./dist/js'));
 });

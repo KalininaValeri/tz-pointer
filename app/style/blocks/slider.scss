@@ -207,3 +207,9 @@
     width: 100%;
   }
 }
+
+.form-slide__btn.disable {
+  opacity: 0;
+  position: relative;
+  z-index: -5;
+}

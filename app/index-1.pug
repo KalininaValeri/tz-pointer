@@ -35,11 +35,11 @@ html
             section.slider
                 .slide.active.slide-one
                     .slide-one__container
-                        form.form-slide
+                        form.form-slide.disable
                             h2.slide__title Оставте Ваш номер телефона и мы перезвоним
-                            input.form-slide__input(type='text' placeholder="Имя")
-                            input.form-slide__input(type='text' placeholder='Телефон')
-                            button.form-slide__btn Оставить
+                            input.form-slide__input.form-slide__input_name(type='text' placeholder="Имя")
+                            input.form-slide__input.form-slide__input_phone(placeholder='Телефон' type="text")
+                            button.form-slide__btn.disable Оставить
 
                 .slide.slide-two.next
                     .slide-two__container

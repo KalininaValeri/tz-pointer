@@ -2,6 +2,7 @@ $(function () {
     var
         form = document.querySelector('.form-slide'),
         btnContacts = document.querySelector('.contact__link'),
+        btnPaginator = document.querySelector('.slider-paginator__link');
         inputPhone = document.querySelector('.form-slide__input_phone'),
         btnSubmitForm = document.querySelector('.form-slide__btn'),
         arrPaginatorDots = [];
@@ -17,8 +18,12 @@ $(function () {
     inputPhone.addEventListener('focus', validFocus());
 
     btnContacts.addEventListener('click', function(e){
-        transitionSection(e);
+        transitionSectionAbout(e);
     });
+
+    btnPaginator.addEventListener('click', function (e) {
+        transitionSectionSlider(e);
+    })
 
     form.addEventListener('keydown', function () {
 

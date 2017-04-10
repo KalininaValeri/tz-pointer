@@ -1,4 +1,9 @@
 var slider = function(){
+    var
+        arrPaginatorDots = [];
+
+    arrPaginatorDots = document.querySelectorAll('.slider-paginator__item_dots');
+
     document.querySelector('.slide.active').classList.add('prev');
     document.querySelector('.slide.active').classList.remove('active');
 

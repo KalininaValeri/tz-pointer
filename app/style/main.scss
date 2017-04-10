@@ -46,34 +46,8 @@ ul {
   position: relative;
   padding-top: 20px;
 
-
-  .slider {
-    display: none;
-  }
 }
 
-.container {
-  .slider {
-    display: none;
-  }
-}
-
-.container.show-slider {
-  .slider {
-    display: block;
-    position: relative;
-    padding-top: 350px;
-    background: white;
-  }
-
-  .about {
-    display: none;
-  }
-
-  .contact {
-    opacity: 0;
-  }
-}
 
 
 

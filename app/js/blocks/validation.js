@@ -26,6 +26,7 @@ var validFocus = function() {
 
 var validEmpty = function () {
     var
+        inputPhone = document.querySelector('.form-slide__input_phone'),
         inputName = document.querySelector('.form-slide__input_name'),
         validNumber = 0;
 

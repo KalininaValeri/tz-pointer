@@ -1,9 +1,45 @@
+.slider {
+  top: 0;
+  position: relative;
+  padding-top: 300px;
+  background: white;
+  -webkit-transition: all 100ms;
+  -moz-transition: all 100ms;
+  -o-transition: all 100ms;
+  transition: all 100ms;
+}
 
+.slider.jump {
+  top: -10%;
+  padding-top: 400px;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.slider.bottom {
+  top: 150%;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
 
 .slider-paginator {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
+  transition: all 100ms;
+  -wepkit-transition: all 100ms;
+  -moz-transition: all 100ms;
+  -o-transition: all 100ms;
+  -ms-transition: all 100ms;
+}
+
+.slider-paginator.invisible {
+  opacity: 0;
 }
 
 .slide {
@@ -16,7 +52,7 @@
   left: 0;
   width: 100%;
 
-  transition: all 1s, right 1s;
+  transition: all 1s;
   -wepkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;

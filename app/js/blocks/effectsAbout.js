@@ -30,7 +30,7 @@ var effectsAbout = function () {
     var
         containerAbout = document.querySelector('.about'),
         nodeSolushion = document.querySelector('.about__icon_zadach'),
-    aboutTechnology = document.querySelector('.about__icon_technology'),
+        aboutTechnology = document.querySelector('.about__icon_technology'),
         topAboutTechnology = containerAbout.getBoundingClientRect().top + aboutTechnology.offsetHeight;
 
     aboutTechnology.style.top = '-' + topAboutTechnology + 'px';
@@ -38,15 +38,12 @@ var effectsAbout = function () {
 
     buldSodeSolushion(); //zadach
 
-    // addNewIcon('about__icon_effect', 0); //effect
-
     addNewIcon('about__icon_creative', 1000 * 3.5); //creative
     addClassVisible('.about__icon_creative', 1000 * 3 + 510);
 
 
     addClassVisible('.about__icon_iweb', 1000 * 3 + 810);
 
-    // addNewIcon('about__icon_technology', 1000 * 4 + 200);
     setTimeout(function () {
         containerAbout.style.overflow = 'visible';
 
@@ -63,8 +60,6 @@ var effectsAbout = function () {
         nodeSolushion.classList.add('visible');
         nodeSolushion.classList.remove('left');
     }, 1000 * 6)
-
-    // addClassVisible('.about__icon_zadach', 1000 * 5);
 
     addClassVisible('.about__icon_resheniya', 1000 * 4 + 530);
 

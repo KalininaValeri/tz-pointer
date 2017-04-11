@@ -1,13 +1,13 @@
 var effectsHeader = function(){
-    setInterval(function () {
+    setTimeout(function () {
         document.querySelector('.link-portfolio').classList.remove('invisible');
-    }, 1000 * 7 + 500);
+    }, 1000 * 5);
 
-    setInterval(function () {
+    setTimeout(function () {
         document.querySelector('.logo').classList.remove('invisible');
-    }, 1000 * 12 + 500);
+    }, 1000 * 8);
 
-    setInterval(function () {
+    setTimeout(function () {
         arrPoint = document.querySelectorAll('.contact__point');
 
         var
@@ -27,5 +27,5 @@ var effectsHeader = function(){
         }
 
         each();
-    }, 1000 * 13 + 500);
+    }, 1000 * 9);
 };

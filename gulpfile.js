@@ -58,11 +58,11 @@ gulp.task('copy:fonts', function () {
         .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('sprites', function () {
-    return gulp.src('app/img/sprites/*.svg')
-        .pipe(svgSprite())
-        .pipe(gulp.dest("dist/img"));
-});
+// gulp.task('sprites', function () {
+//     return gulp.src('app/img/sprites/*.svg')
+//         .pipe(svgSprite())
+//         .pipe(gulp.dest("dist/img"));
+// });
 
 gulp.task('watch', function () {
     gulp.watch(['app/style/**/*.scss', 'app/style/*.scss'], gulp.series('sass'));
@@ -70,7 +70,6 @@ gulp.task('watch', function () {
     gulp.watch(['app/img/**/*.*', 'app/img/*.*'], gulp.series('copy:img'));
     gulp.watch(['app/fonts/**/*.*', 'app/fonts/*.*'], gulp.series('copy:fonts'));
     gulp.watch(['app/js/**/*.*', 'app/js/*.*'], gulp.series('scripts'));
-    gulp.watch(['app/img/sprites/*.*'], gulp.series('sprites'));
 });
 
 gulp.task('default', gulp.series(
@@ -79,7 +78,6 @@ gulp.task('default', gulp.series(
         'sass',
         'pug',
         'copy:img',
-        'sprites',
         'copy:fonts',
         'scripts'
     ),

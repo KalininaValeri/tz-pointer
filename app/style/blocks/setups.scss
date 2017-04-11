@@ -1,0 +1,43 @@
+
+html {
+  font-size: 10px;
+
+  @include laptop {
+    font-size: 7px;
+  }
+
+  @include tablet {
+    font-size: 4px;
+  }
+
+  @include phone {
+    font-size: 2.5px;
+  }
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: 'RopaSoftPro';
+  font-size: 1.4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  padding-top: 20px;
+
+}

@@ -13,7 +13,7 @@
   -o-transition: top 100ms;
   transition: top 100ms;
 
-  @include tablet{
+  @include tablet {
     width: 73rem;
     height: 23rem;
     margin-left: -36.5rem;
